@@ -6,9 +6,9 @@ namespace DIO.Bank
     {
         static void Main(string[] args)
         {
-            Account myAccount = new Account();
+            Account myAccount = new Account(AccountType.Personal, 0, 0, "Vitor");
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(myAccount.ToString());
         }
     }
 }
